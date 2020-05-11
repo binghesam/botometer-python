@@ -132,7 +132,7 @@ class Botometer(object):
         bom_resp.raise_for_status()
         classification = bom_resp.json()
 
-        return classification
+        return classification, payload
 
 
     def check_accounts_in(self, accounts, full_user_object=False,
